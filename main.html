@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.A. ENGENHARIA | Painel Operacional</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/css.css">
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col justify-between overflow-x-hidden font-sans relative">
+
+    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" 
+             alt="M.A. Engenharia Fundo Claro" 
+             class="w-full h-full object-cover">
+    </div>
+
+    <header class="relative z-10 w-full max-w-[1400px] mx-auto px-6 md:px-12 pt-10 flex justify-end items-center select-none">
+        <a href="https://wa.me/5562983077512?text=Olá%20Marcos,%20solicito%20alinhamento%20técnico%20com%20a%20M.A.%20Engenharia." 
+           target="_blank" rel="noopener noreferrer" 
+           class="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-lg active:scale-95 cursor-pointer animate-whatsapp text-center"
+           title="Falar com o Engenheiro Marcos">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+        </a>
+    </header>
+
+    <main class="relative z-10 w-full max-w-[1400px] mx-auto px-6 md:px-12 flex-grow flex flex-col justify-center select-none py-8">
+        <div class="max-w-3xl space-y-3">
+            <span class="block text-xs text-blue-800 font-black uppercase tracking-[0.25em]">
+                Private Civil Engineering
+            </span>
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none font-logo-split">
+                M.A.ENGENHARIA
+            </h2>
+            <p class="text-xl md:text-2xl text-slate-900 font-extrabold tracking-wider uppercase italic flex items-center gap-3">
+                <span class="w-8 h-[3px] bg-blue-700"></span>
+                "Edificando Sonhos"
+            </p>
+        </div>
+    </main>
+
+    <section class="relative z-10 w-full max-w-[1400px] mx-auto px-6 md:px-12 pb-8 flex flex-col gap-5">
+        
+        <div id="display-info-panel" class="w-full bg-white border border-slate-300 p-6 rounded-2xl shadow-xl hidden opacity-0 translate-y-6 cubic-transition flex flex-col md:flex-row gap-6 items-center">
+            <div id="pilar-target-image" class="w-full md:w-52 h-36 bg-cover bg-center rounded-xl border border-slate-300 flex-shrink-0 transition-all duration-500 scale-95 opacity-0 shadow-sm"></div>
+            <div class="flex-grow space-y-2 w-full">
+                <span class="block text-xs text-blue-700 font-black uppercase tracking-wider">Escopo Ativo</span>
+                <h3 id="pilar-target-title" class="text-lg font-black text-slate-900 uppercase tracking-wide"></h3>
+                <p id="pilar-target-text" class="text-sm text-slate-800 leading-relaxed font-medium"></p>
+                <div class="pt-2">
+                    <a id="pilar-whatsapp-link" href="#" target="_blank" class="inline-flex items-center gap-2 text-xs font-black text-blue-700 hover:text-blue-900 uppercase tracking-widest transition-colors group/link">
+                        <span>Falar com o Engenheiro Marcos</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover/link:translate-x-1 cubic-transition"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full bg-slate-50 border border-slate-300 p-4 rounded-2xl shadow-xl">
+            <div class="grid grid-cols-2 sm:grid-cols-6 gap-3 w-full">
+                
+                <button onclick="window.activatePilar('residencial')" class="btn-pilar-unificado text-center sm:text-left p-4 bg-white border border-slate-300 rounded-xl group cursor-pointer flex flex-col justify-between items-center sm:items-start gap-4 shadow-sm">
+                    <i class="fa-solid fa-house-chimney text-blue-700 text-lg transition-transform group-hover:scale-110"></i>
+                    <div>
+                        <h4 class="text-xs font-black text-slate-900 uppercase tracking-wider">Residencial</h4>
+                        <p class="text-[10px] text-slate-700 font-bold mt-0.5">Alto Padrão</p>
+                    </div>
+                </button>
+
+                <button onclick="window.activatePilar('reformas')" class="btn-pilar-unificado text-center sm:text-left p-4 bg-white border border-slate-300 rounded-xl group cursor-pointer flex flex-col justify-between items-center sm:items-start gap-4 shadow-sm">
+                    <i class="fa-solid fa-trowel-bricks text-blue-700 text-lg transition-transform group-hover:scale-110"></i>
+                    <div>
+                        <h4 class="text-xs font-black text-slate-900 uppercase tracking-wider">Reformas</h4>
+                        <p class="text-[10px] text-slate-700 font-bold mt-0.5">Modificações</p>
+                    </div>
+                </button>
+
+                <button onclick="window.activatePilar('galpoes')" class="btn-pilar-unificado text-center sm:text-left p-4 bg-white border border-slate-300 rounded-xl group cursor-pointer flex flex-col justify-between items-center sm:items-start gap-4 shadow-sm">
+                    <i class="fa-solid fa-warehouse text-blue-700 text-lg transition-transform group-hover:scale-110"></i>
+                    <div>
+                        <h4 class="text-xs font-black text-slate-900 uppercase tracking-wider">Galpões</h4>
+                        <p class="text-[10px] text-slate-700 font-bold mt-0.5">Logística</p>
+                    </div>
+                </button>
+
+                <button onclick="window.activatePilar('laudos')" class="btn-pilar-unificado text-center sm:text-left p-4 bg-white border border-slate-300 rounded-xl group cursor-pointer flex flex-col justify-between items-center sm:items-start gap-4 shadow-sm">
+                    <i class="fa-solid fa-file-signature text-blue-700 text-lg transition-transform group-hover:scale-110"></i>
+                    <div>
+                        <h4 class="text-xs font-black text-slate-900 uppercase tracking-wider">Laudos</h4>
+                        <p class="text-[10px] text-slate-700 font-bold mt-0.5">Diagnósticos</p>
+                    </div>
+                </button>
+
+                <button onclick="window.activatePilar('orcamentos')" class="btn-pilar-unificado text-center sm:text-left p-4 bg-white border border-slate-300 rounded-xl group cursor-pointer flex flex-col justify-between items-center sm:items-start gap-4 shadow-sm">
+                    <i class="fa-solid fa-coins text-blue-700 text-lg transition-transform group-hover:scale-110"></i>
+                    <div>
+                        <h4 class="text-xs font-black text-slate-900 uppercase tracking-wider">Orçamentos</h4>
+                        <p class="text-[10px] text-slate-700 font-bold mt-0.5">Custos e Prazos</p>
+                    </div>
+                </button>
+
+                <button onclick="window.openTechnicalHubPage(true)" class="col-span-2 sm:col-span-1 bg-slate-950 hover:bg-slate-800 text-white p-4 rounded-xl cubic-transition active:scale-95 cursor-pointer flex flex-col justify-center items-center gap-2 shadow-md border border-slate-900 text-center">
+                    <i class="fa-solid fa-map-location-dot text-lg text-cyan-400"></i>
+                    <span class="text-[10px] font-black uppercase tracking-wider block">Hub Técnico</span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="technical-hub-modal" class="fixed inset-0 bg-slate-50 z-50 transform translate-y-full cubic-transition flex flex-col hidden overflow-y-auto">
+        <div class="w-full bg-white border-b border-slate-300 px-6 md:px-12 py-5 flex justify-between items-center sticky top-0 z-10 shadow-sm">
+            <div class="flex items-center gap-3">
+                <div class="text-blue-700 text-xl"><i class="fa-solid fa-map-location-dot"></i></div>
+                <h2 class="text-sm font-black text-slate-900 uppercase tracking-widest">Portfólio de Ativos e Obras Executadas</h2>
+            </div>
+            <button onclick="window.openTechnicalHubPage(false)" class="bg-slate-950 hover:bg-slate-800 text-white text-[10px] font-black uppercase tracking-widest px-5 py-3.5 rounded-xl transition-transform active:scale-95 cursor-pointer shadow-md">
+                <i class="fa-solid fa-arrow-left mr-1.5"></i> Voltar ao Painel
+            </button>
+        </div>
+
+        <div class="max-w-6xl w-full mx-auto p-6 md:p-12 grid grid-cols-1 md:grid-cols-3 gap-8 select-none">
+            <div class="md:col-span-1">
+                <div class="bg-white p-6 rounded-2xl border border-slate-300 shadow-md space-y-3 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-[4px] bg-blue-700"></div>
+                    <h4 class="text-xs uppercase tracking-widest text-blue-800 font-black">Chancela Operacional</h4>
+                    <p class="text-sm text-slate-800 font-medium leading-relaxed">
+                        Projetos, quantitativos e laudos técnicos estruturados diretamente sob a tutela do Engenheiro Marcos, garantindo rigidez normativa perante o CREA.
+                    </p>
+                    <div class="pt-3 border-t border-slate-200 flex items-center gap-2.5 text-slate-900">
+                        <i class="fa-solid fa-envelope text-blue-700 text-sm"></i>
+                        <span class="text-xs font-mono font-bold select-all">Marcos.m.a.engenharia@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 space-y-6">
+                <h3 class="text-xs uppercase tracking-widest text-slate-400 font-bold">Projetos Executados</h3>
+                
+                <div class="bg-white border border-slate-300 rounded-2xl overflow-hidden shadow-sm flex flex-col sm:flex-row group transition-all duration-300 hover:shadow-md">
+                    <div class="w-full sm:w-52 h-36 bg-cover bg-center transition-transform duration-500 group-hover:scale-102" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=400&q=80')"></div>
+                    <div class="p-5 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] text-blue-700 font-black uppercase tracking-wider block mb-1">Infraestrutura</span>
+                            <h4 class="text-base font-black text-slate-900 uppercase">Complexo Industrial Logístico</h4>
+                        </div>
+                        <p class="text-sm text-slate-800 font-medium mt-1.5 leading-relaxed">
+                            Cálculo estrutural e modelagem de superestrutura para galpão comercial. Acompanhamento de concretagem de piso de alta resistência para cargas dinâmicas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-300 rounded-2xl overflow-hidden shadow-sm flex flex-col sm:flex-row group transition-all duration-300 hover:shadow-md">
+                    <div class="w-full sm:w-52 h-36 bg-cover bg-center transition-transform duration-500 group-hover:scale-102" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=400&q=80')"></div>
+                    <div class="p-5 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] text-blue-700 font-black uppercase tracking-wider block mb-1">Alto Padrão</span>
+                            <h4 class="text-base font-black text-slate-900 uppercase">Residência Unifamiliar Concept</h4>
+                        </div>
+                        <p class="text-sm text-slate-800 font-medium mt-1.5 leading-relaxed">
+                            Gerenciamento total do canteiro de obras: da fundação em sapatas isoladas até a entrega estrutural fina seguindo projetos arquitetônicos contemporâneos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="h-10 border-t border-slate-300 bg-white z-10 flex items-center px-6 md:px-12 select-none text-[10px] font-bold tracking-wide">
+        <div class="max-w-[1400px] w-full mx-auto flex justify-between items-center text-slate-700">
+            <div>
+                Architected by <a href="https://uup-site.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-900 font-black transition-colors hover:underline">UUP SOFTWARE SOLUTIONS</a>
+            </div>
+            <div class="uppercase tracking-widest font-black text-slate-500">
+                M.A. Engenharia © 2026
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/js.js"></script>
+</body>
+</html>
