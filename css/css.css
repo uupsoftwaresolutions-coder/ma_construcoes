@@ -1,106 +1,66 @@
-/* ==========================================================================
-   ⚙️ RESET DE COMPONENTES E ANTI-ALIASING
-   ========================================================================== */
-   * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+/* Oculta scrollbars nativas mas permite deslizar os cards */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 10px;
 }
 
-/* ==========================================================================
-   💎 PREENCHIMENTO TIPOGRÁFICO DE MARCA (M.A. ENGENHARIA)
-   ========================================================================== */
-.font-logo-split {
-    background: linear-gradient(to bottom, #1d4ed8 0%, #1d4ed8 55%, #06b6d4 55%, #06b6d4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* Constante linear de transição inercial */
 .cubic-transition {
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ==========================================================================
-   🟢 MOTION MOTOR: OSCILAÇÃO INTEGRADA DO WHATSAPP LEVITANTE
+   🟢 ANIMAÇÃO WHATSAPP PULSE
    ========================================================================== */
-@keyframes whatsapp-pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
-    }
-    50% {
-        transform: scale(1.06);
-        box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
-    }
+@keyframes whatsapp-float {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
 
 .animate-whatsapp {
-    animation: whatsapp-pulse 2s infinite ease-in-out;
-}
-
-.animate-whatsapp:hover {
-    background-color: #10b981 !important; /* Emerald 500 */
-    transform: scale(1.1) !important;
+    animation: whatsapp-float 2s infinite ease-in-out;
 }
 
 /* ==========================================================================
-   🟦 ARQUITETURA DE DESIGN DOS BOTÕES (SÓLIDOS E ALTO CONTRASTE)
+   🟦 ESTADOS DOS CARDS (DESKTOP E MOBILE)
    ========================================================================== */
-.btn-pilar-unificado {
-    transition: all 0.25s ease-in-out;
+/* Desktop */
+.desktop-nav-btn.active-nav {
+    background-color: rgba(6, 182, 212, 0.2) !important;
+    border-color: rgba(6, 182, 212, 0.6) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px -5px rgba(6, 182, 212, 0.3);
+}
+.desktop-nav-btn.active-nav span:last-child {
+    color: #22d3ee !important; 
 }
 
-.btn-pilar-unificado:hover {
-    background-color: #f8fafc; /* Slate 50 */
-    border-color: #94a3b8;     /* Slate 400 */
-    transform: translateY(-2px);
+/* Mobile Drawer */
+.mobile-nav-btn.active-nav {
+    background-color: rgba(6, 182, 212, 0.15) !important;
+    border-color: rgba(6, 182, 212, 0.5) !important;
+}
+.mobile-nav-btn.active-nav span:last-child {
+    color: #22d3ee !important; 
 }
 
-/* ESTADO ATIVO: Fundo Azul Real Sólido com texto Branco para legibilidade total */
-.btn-pilar-unificado.active-pilar {
-    background-color: #1e40af !important; /* Azul Real Sólido */
-    color: #ffffff !important;
-    border-color: #0284c7 !important;     /* Sky 600 */
-    box-shadow: 0 8px 20px -4px rgba(30, 64, 175, 0.35);
-    transform: translateY(-2px);
+.overflow-x-auto {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-
-.btn-pilar-unificado.active-pilar i {
-    color: #38bdf8 !important; /* Cyan de alto contraste */
-}
-
-.btn-pilar-unificado.active-pilar h4 {
-    color: #ffffff !important;
-}
-
-.btn-pilar-unificado.active-pilar p {
-    color: #e2e8f0 !important; /* Cinza claro legível sobre o azul */
-}
-
-/* Scrollbar Customizada do Painel do Portfólio */
-.overflow-y-auto::-webkit-scrollbar {
-    width: 6px;
-}
-
-.overflow-y-auto::-webkit-scrollbar-track {
-    background: #f1f5f9;
-}
-
-.overflow-y-auto::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
-    border-radius: 99px;
-}
-
-.overflow-y-auto::-webkit-scrollbar-thumb:hover {
-    background: #1e40af;
+.overflow-x-auto::-webkit-scrollbar {
+    display: none;
 }
