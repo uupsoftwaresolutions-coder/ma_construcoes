@@ -4,31 +4,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const database = {
         residencial: {
             title: "Residencial Premium",
-            text: "Construção de residências unifamiliares de alto padrão com controle orçamentário. Da sondagem ao acabamento, aliamos solidez estrutural e economia inteligente.",
+            text: "Especialistas na execução de residências unifamiliares de alto padrão, integramos a sofisticação do projeto arquitetônico a um rigoroso controle orçamentário. Da sondagem geológica preliminar aos detalhes de acabamento fino, nossa gestão físico-financeira garante a racionalização de insumos e a mitigação de desperdícios. Aliamos execução impecável, máxima solidez estrutural e economia inteligente para materializar o seu sonho sem surpresas no orçamento..",
             image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80",
             wp: "Olá Engenheiro Marcos, gostaria de tratar sobre Construção Residencial!"
         },
         reformas: {
             title: "Reformas & Retrofit",
-            text: "Intervenções precisas em estruturas de concreto armado ou alvenaria. Reforço de vigas e aberturas de vãos com total segurança técnica assegurada por ART.",
+            text: "ITransformar espaços exige mais do que execução; exige precisão matemática. Somos especialistas em retrofit imobiliário e intervenções cirúrgicas em estruturas de concreto armado e alvenaria. Viabilizamos projetos arquitetônicos modernos — como a integração de ambientes (open concept) e a abertura de grandes vãos livres — sem comprometer a estabilidade da edificação. Executamos o mapeamento prévio de cargas, escoramentos técnicos e o reforço estratégico de vigas e pilares. Substituímos o improviso por cálculo exato: cada milímetro alterado é respaldado por Anotação de Responsabilidade Técnica (ART), garantindo segurança jurídica absoluta, blindagem contra patologias futuras e a valorização real do seu patrimônio.",
             image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80",
             wp: "Olá Engenheiro Marcos, gostaria de tratar sobre Reformas!"
         },
         galpoes: {
             title: "Infra Industrial",
-            text: "Plantas comerciais e galpões de grande vão livre. Expertise em fundações profundas e execução de pisos industriais de alto tráfego com cura controlada.",
+            text: "A infraestrutura logística e industrial do seu negócio exige robustez inegociável e alta performance estrutural. Executamos plantas comerciais e galpões de grandes vãos livres, projetados para otimizar ao máximo o seu espaço de armazenagem e a flexibilidade do layout operacional. Nossa expertise abrange o gerenciamento completo de engenharia pesada: desde a execução exata de fundações profundas — preparadas para cargas extremas — até o lançamento de pisos industriais de alta resistência. Utilizamos nivelamento a laser e técnicas avançadas de cura controlada do concreto, mitigando fissurações estruturais e garantindo um pavimento hiper-resistente para o tráfego contínuo de maquinário pesado e empilhadeiras. Entregamos um ativo sólido, durável e desenhado para blindar a sua operação contra manutenções corretivas.",
             image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80",
             wp: "Olá Engenheiro Marcos, solicito orçamento para Galpões Industriais!"
         },
         laudos: {
             title: "Eng. Diagnóstica",
-            text: "Mapeamento sistemático de manifestações patológicas da construção civil (fissuras e recalques). Emissão de vistorias cautelares e laudos técnicos periciais.",
+            text: "A saúde estrutural de um patrimônio não admite negligência. Atuamos como investigadores técnicos do seu imóvel através da Engenharia Diagnóstica de alta precisão. Realizamos o mapeamento científico e sistemático de manifestações patológicas complexas — como fissuras dinâmicas, infiltrações crônicas, oxidação de armaduras e recalques diferenciais de fundação. Muito além de identificar o sintoma, determinamos a causa raiz exata e prescrevemos a terapia estrutural definitiva. Emitimos vistorias cautelares de vizinhança para blindagem preventiva antes do início de novas obras e elaboramos laudos técnicos periciais incontestáveis, rigorosamente embasados nas normas da ABNT. Entregamos a prova técnica irrefutável necessária para embasar litígios judiciais, acionar garantias construtivas e proteger o seu investimento.",
             image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1920&q=80",
             wp: "Olá Engenheiro Marcos, necessito de um Laudo Técnico Pericial!"
         },
         orcamentos: {
             title: "Eng. de Custos",
-            text: "Levantamento detalhado e composição de custos unitários (SINAPI). Elaboração de cronogramas físico-financeiros para mitigar desperdícios e atrasos.",
+            text: "Em qualquer obra, de uma simples reforma à construção da sua casa ou ponto comercial, o descontrole orçamentário é o maior risco para o seu investimento. Nossa atuação em Planejamento atua como uma barreira de proteção para o seu capital, substituindo o improviso por cálculos exatos. Quantificamos cada insumo e hora-homem através de composições rigorosas de custos unitários. Ao integrar o escopo técnico a um cronograma físico-financeiro estratégico, garantimos que a velocidade da obra caminhe em perfeita sincronia com o seu cronograma de desembolso. Entregamos transparência total, governança de ponta a ponta e a garantia de que o seu projeto será executado estritamente dentro da verba e do prazo aprovados..",
             image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1920&q=80",
             wp: "Olá Engenheiro Marcos, preciso planejar o Orçamento da minha obra!"
         }
