@@ -15,20 +15,27 @@
 
     <!-- ==========================================================================
          🖼️ CINEMA BACKGROUND (IMAGENS NÍTIDAS + MÁSCARAS DE LEITURA)
+         ==<!-- ==========================================================================
+         🖼️ CINEMA BACKGROUND (CORREÇÃO DE SANGRIA PARA BORDAS MOBILE)
          ========================================================================== -->
-    <div class="absolute inset-0 z-0">
-        <div id="slider-container" class="absolute inset-0 transition-opacity duration-1000">
+    <!-- Adicionamos bg-slate-950 aqui para que o fundo absoluto seja escuro -->
+    <div class="absolute inset-0 z-0 bg-slate-950 overflow-hidden">
+        
+        <!-- 🛠️ CORREÇÃO: -inset-4 faz o contêiner "vazar" da tela. As bordas da imagem ficam fora da visão do cliente! -->
+        <div id="slider-container" class="absolute -inset-4 transition-opacity duration-1000 bg-slate-950">
             <div id="slide-1" class="absolute inset-0 bg-cover bg-center transition-all duration-[2000ms] opacity-100 scale-100" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');"></div>
             <div id="slide-2" class="absolute inset-0 bg-cover bg-center transition-all duration-[2000ms] opacity-0 scale-105" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80');"></div>
             <div id="slide-3" class="absolute inset-0 bg-cover bg-center transition-all duration-[2000ms] opacity-0 scale-105" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80');"></div>
         </div>
         
-        <div id="service-bg" class="absolute inset-0 bg-cover bg-center transition-all duration-1000 opacity-0 scale-105" style="background-image: url('');"></div>
+        <!-- O fundo dos serviços também ganha o -inset-4 -->
+        <div id="service-bg" class="absolute -inset-4 bg-cover bg-center transition-all duration-1000 opacity-0 scale-105" style="background-image: url('');"></div>
 
-        <!-- Gradientes Protetores de Leitura -->
+        <!-- Gradientes Protetores de Leitura (Mantemos no inset-0 para cobrir apenas a tela visível) -->
         <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 md:from-slate-950/90 via-slate-950/70 md:via-slate-950/40 to-transparent"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-90 md:opacity-80"></div>
-    </div>
+    </div>======================================================================== -->
+ 
 
     <!-- ==========================================================================
          🛸 HEADER GLOBAL (MENU HAMBÚRGUER E WHATSAPP)
