@@ -5,25 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
         residencial: {
             title: "Residencial Premium",
             text: "Especialistas na execução de residências unifamiliares de alto padrão, integramos a sofisticação do projeto arquitetônico a um rigoroso controle orçamentário. Da sondagem geológica preliminar aos detalhes de acabamento fino, nossa gestão físico-financeira garante a racionalização de insumos e a mitigação de desperdícios. Aliamos execução impecável, máxima solidez estrutural e economia inteligente para materializar o seu sonho sem surpresas no orçamento..",
-            image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80",
+            image: "https://images.unsplash.com/photo-1728721934633-b4195a825581?auto=format&fit=crop&w=1920&q=80",
             wp: "Olá Engenheiro Marcos, gostaria de tratar sobre Construção Residencial!"
         },
         reformas: {
             title: "Reformas & Retrofit",
             text: "ITransformar espaços exige mais do que execução; exige precisão matemática. Somos especialistas em retrofit imobiliário e intervenções cirúrgicas em estruturas de concreto armado e alvenaria. Viabilizamos projetos arquitetônicos modernos — como a integração de ambientes (open concept) e a abertura de grandes vãos livres — sem comprometer a estabilidade da edificação. Executamos o mapeamento prévio de cargas, escoramentos técnicos e o reforço estratégico de vigas e pilares. Substituímos o improviso por cálculo exato: cada milímetro alterado é respaldado por Anotação de Responsabilidade Técnica (ART), garantindo segurança jurídica absoluta, blindagem contra patologias futuras e a valorização real do seu patrimônio.",
-            image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80",
+            image: "https://images.unsplash.com/photo-1765894518274-f53145743a46?auto=format&fit=crop&w=1920&q=80",
             wp: "Olá Engenheiro Marcos, gostaria de tratar sobre Reformas!"
         },
         galpoes: {
-            title: "Infra Industrial",
+            title: "Infraestrutura Industrial",
             text: "A infraestrutura logística e industrial do seu negócio exige robustez inegociável e alta performance estrutural. Executamos plantas comerciais e galpões de grandes vãos livres, projetados para otimizar ao máximo o seu espaço de armazenagem e a flexibilidade do layout operacional. Nossa expertise abrange o gerenciamento completo de engenharia pesada: desde a execução exata de fundações profundas — preparadas para cargas extremas — até o lançamento de pisos industriais de alta resistência. Utilizamos nivelamento a laser e técnicas avançadas de cura controlada do concreto, mitigando fissurações estruturais e garantindo um pavimento hiper-resistente para o tráfego contínuo de maquinário pesado e empilhadeiras. Entregamos um ativo sólido, durável e desenhado para blindar a sua operação contra manutenções corretivas.",
-            image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80",
+            image: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&fit=crop&w=1920&q=80",
             wp: "Olá Engenheiro Marcos, solicito orçamento para Galpões Industriais!"
         },
         laudos: {
             title: "Eng. Diagnóstica",
             text: "A saúde estrutural de um patrimônio não admite negligência. Atuamos como investigadores técnicos do seu imóvel através da Engenharia Diagnóstica de alta precisão. Realizamos o mapeamento científico e sistemático de manifestações patológicas complexas — como fissuras dinâmicas, infiltrações crônicas, oxidação de armaduras e recalques diferenciais de fundação. Muito além de identificar o sintoma, determinamos a causa raiz exata e prescrevemos a terapia estrutural definitiva. Emitimos vistorias cautelares de vizinhança para blindagem preventiva antes do início de novas obras e elaboramos laudos técnicos periciais incontestáveis, rigorosamente embasados nas normas da ABNT. Entregamos a prova técnica irrefutável necessária para embasar litígios judiciais, acionar garantias construtivas e proteger o seu investimento.",
-            image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1920&q=80",
+            image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1920&q=80",
             wp: "Olá Engenheiro Marcos, necessito de um Laudo Técnico Pericial!"
         },
         orcamentos: {
